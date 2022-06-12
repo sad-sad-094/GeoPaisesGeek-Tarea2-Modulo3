@@ -1,0 +1,129 @@
+/* Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com  */
+
+body {
+  background-color: rgba(211, 211, 211, 0.708);
+}
+
+.cita-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 30px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  width: 50%;
+  margin: 15px;
+}
+
+.img-buttn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.image {
+  height: 230px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-container h3 {
+  font-size: 26px;
+}
+
+.description-container p {
+  font-size: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  width: 50%;
+  margin: 15px;
+}
+
+.form-container h4 {
+  font-size: 26px;
+}
+
+.form-input-container {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 600px;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.form-comment {
+  width: 600px;
+  height: 100px;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.submit-button {
+  border-radius: 10px;
+  background-color: #779df0;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 26px;
+  color: white;
+  max-width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-bttn {
+  max-width: 100%;
+  text-decoration: none;
+  color: rgba(18, 46, 205, 0.83);
+  font-family: 'Amatic SC', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.tarjeta-cita {
+  width: 150px;
+  height: 200px;
+  transform: rotate(7deg);
+}

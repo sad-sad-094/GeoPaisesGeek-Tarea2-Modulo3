@@ -1,0 +1,66 @@
+<!-- Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/place-details.css">
+  <link rel="shortcut icon" href="../images/logo.png">
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script&display=swap"
+    rel="stylesheet">
+  <title>Agendar Cita</title>
+</head>
+
+<body>
+
+  <div id="container" class="cita-container">
+
+    <div id="img-info-container" class="info-container">
+      <div id="img-backbttn-container" clas="img-buttn-container">
+        <a href="../index.html" class="back-bttn">Volver</a>
+        <div>
+          <img id="destino-cita"
+            class="image">
+        </div>
+      </div>
+      <div id="name-info-container" class="description-container">
+        <h3 id="name-cita">Ciudad</h3>
+        <p id="info-cita">Este es su destino</p>
+      </div>
+      <div id="tarjeta">
+        <img id="tarjeta-cont" class="tarjeta-cita">
+      </div>
+    </div>
+
+    <div id="form-container" class="form-container">
+      <h4>Agenda tu cita aquí</h4>
+      <form id="enviar-cita" class="form-input-container">
+        <input type="text" id="destino" disabled="disabled"><br>
+        <input type="text" id="continente" disabled="disabled"><br>
+        <label for="Fecha de partida">Fecha de partida:</label><br>
+        <input type="date" id="fecha-salida" name="Fecha de partida"><br>
+        <label for="Fecha de retorno">Fecha de retorno:</label><br>
+        <input type="date" id="fecha-regreso" name="Fecha de retorno"><br>
+        <textarea type="text" id="user-comment" name="comentarios" placeholder="Comentarios" class="form-comment"></textarea><br>
+        <input type="submit" class="submit-button"></input>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="./place-details.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
