@@ -1,12 +1,16 @@
 /* Author: Sebastian Aguirre Duque
 E-mail: sadw621@gmail.com */
 
-function GetFromLocalStorage(key) {
-  return JSON.parse(localStorage.getItem(key));
-}
+// function GetFromLocalStorage(key) {
+//   return JSON.parse(localStorage.getItem(key));
+// }
 
-let infoDestino = GetFromLocalStorage('destinoElegido');
+import {destinos} from './places-data-bases.js';
+
+let indexDestino = localStorage.getItem('destinoElegido');
 let continenteName = localStorage.getItem('continente');
+
+let infoDestino = destinos[indexDestino];
 
 document.getElementById('destino-cita').src = `../images/${infoDestino.images}`;
 document.getElementById('name-cita').textContent = infoDestino.city;
